@@ -58,7 +58,7 @@ export default class SearchScreen extends React.Component {
                     ))}
 
                     <div className="footerdiv">
-                        <img alt="Audiofy" className="center" src="./img/logoh.png" width="230" height="92" />
+                        <h1 className="playlogo">Audiofy</h1> <br />
                         <a className="atextdec" href={`https://facebook.com/iTahseen`}>
                             <p className="paragone" >Made in ❤</p>
                         </a><br />
