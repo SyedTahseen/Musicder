@@ -17,10 +17,10 @@ export default class PlayScreen extends React.Component {
                 var song = res.data;
 
                 if (song.result === "false") {
-                    document.title = `Error | Musicder`
+                    document.title = `Error | Audiofy`
                     this.setState({ song })
                 } else {
-                    document.title = `Download ${song.song} | Musicder`
+                    document.title = `Download ${song.song} | Audiofy`
                     this.setState({
                         song,
                         qOne: song.other_qualities[0].url,
@@ -62,11 +62,11 @@ export default class PlayScreen extends React.Component {
                     </div>
 
                     <div className="dldfooter">
-                        <h1 className="playlogo">MUSICDER</h1>
-                        <a className="atextdec" href={`https://github.com/cachecleanerjeet`}>
-                            <p className="playparagone" >An Open Source Project by Tuhin</p>
+                        <h1 className="playlogo">Audiofy</h1>
+                        <a className="atextdec" href={`https://facebook.com/iTahseen`}>
+                            <p className="playparagone" >Made in ❤</p>
                         </a>
-                        <a href={`https://github.com/cachecleanerjeet/Musicder`}>
+                        <a href={`https://github.com/syedtahseen`}>
                             <img alt="Github" className="center" src="../img/github-black.svg" width="30" height="30" />
                         </a>
                     </div>
