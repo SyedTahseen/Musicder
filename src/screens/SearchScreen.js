@@ -13,7 +13,7 @@ export default class SearchScreen extends React.Component {
         axios.get(`${config.API_URL}/search?query=${new URLSearchParams(this.props.location.search).get('query').replace(/ /gi,"+")}`)
             .then(res => {
                 var songs = res.data;
-                document.title = `${new URLSearchParams(this.props.location.search).get('query')} - Search | Musicder`
+                document.title = `${new URLSearchParams(this.props.location.search).get('query')} - Search | Audiofy`
                 this.setState({ songs });
             })
     }
@@ -58,11 +58,11 @@ export default class SearchScreen extends React.Component {
                     ))}
 
                     <div className="footerdiv">
-                        <img alt="Musicder" className="center" src="./img/logo.png" width="230" height="92" />
-                        <a className="atextdec" href={`https://github.com/cachecleanerjeet`}>
-                            <p className="paragone" >An Open Source Project by Tuhin</p>
+                        <img alt="Audiofy" className="center" src="./img/logoh.png" width="230" height="92" />
+                        <a className="atextdec" href={`https://facebook.com/iTahseen`}>
+                            <p className="paragone" >Made in ❤</p>
                         </a><br />
-                        <a href={`https://github.com/cachecleanerjeet/Musicder`}>
+                        <a href={`https://github.com/SyedTahseen`}>
                             <img alt="Github" className="center" src="./img/github-white.svg" width="30" height="30" /><br />
                         </a>
                     </div>
